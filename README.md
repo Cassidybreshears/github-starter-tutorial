@@ -44,6 +44,8 @@ Start here in the README. After Step 2, GitHub will create the rest of the tutor
 2. Open the original `github-starter-tutorial` repository *(if your reading this you are in the repo)*
 3. Click **Use this template**.
 4. Choose **Create a new repository**.
+<img width="500" alt="CleanShot 2026-05-26 at 15 35 15@2x" src="https://github.com/user-attachments/assets/0bbc2b6a-c9d0-4873-90f9-ee9c7c34cfb2" />
+
 5. Name your new repository `github-startup`.
 6. Create it under your own GitHub account.
 7. Open your new `github-startup` repository.
