@@ -1,4 +1,4 @@
-# Step 3: Sign In to GitHub Desktop
+# Step 4: Sign In to GitHub Desktop
 
 ## Goal
 

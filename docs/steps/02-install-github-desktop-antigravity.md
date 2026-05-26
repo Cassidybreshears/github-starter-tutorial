@@ -1,4 +1,4 @@
-# Step 2: Install GitHub Desktop and Choose an AI Coding Tool
+# Step 3: Install GitHub Desktop and Choose an AI Coding Tool
 
 ## Goal
 

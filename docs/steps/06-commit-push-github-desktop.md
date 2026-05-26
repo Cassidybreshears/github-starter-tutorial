@@ -1,4 +1,4 @@
-# Step 6: Commit and Push with GitHub Desktop
+# Step 7: Commit and Push with GitHub Desktop
 
 ## Goal
 

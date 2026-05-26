@@ -1,4 +1,4 @@
-# Step 4: Clone Your Repo with GitHub Desktop
+# Step 5: Clone Your Repo with GitHub Desktop
 
 ## Goal
 

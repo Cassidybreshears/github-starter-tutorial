@@ -1,4 +1,4 @@
-# Step 5: Open the Local Folder in Your AI Coding Tool
+# Step 6: Open the Local Folder in Your AI Coding Tool
 
 ## Goal
 

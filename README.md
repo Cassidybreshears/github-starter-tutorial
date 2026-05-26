@@ -35,26 +35,32 @@ By the end, you should have:
 - a Command Center dashboard started from the included `index.html`
 
 ## Required Path
-PUT STEP 1 here: 
-Complete these in order.
-start here: 
-**Instructions**
-Create a GitHub account if you do not already have one.
-Open the original github-starter-tutorial repository.
-Click Use this template.
-Choose Create a new repository.
-Name your new repository github-startup.
-this is step 2 keep it in the readme
-Now go to your new repository(repo). Open your new github-startup repository.
-Click the Actions tab.
-If GitHub asks you to enable workflows, enable them.
-Click Initialize Tutorial Issues.
-Click Run workflow.
-Wait for the workflow to finish.
-Open the Issues tab.
-Use the generated issues as your step-by-step checklist.
-Do not click the green Code button yet. You will use that later with GitHub Desktop.
 
+Start here in the README. After Step 2, GitHub will create the rest of the tutorial steps as Issues.
+
+### Step 1: Create Your Tutorial Repo
+
+1. Create a GitHub account if you do not already have one.
+2. Open the original `github-starter-tutorial` repository.
+3. Click **Use this template**.
+4. Choose **Create a new repository**.
+5. Name your new repository `github-startup`.
+6. Create it under your own GitHub account.
+7. Open your new `github-startup` repository.
+
+Do not click the green **Code** button yet. You will use that later with GitHub Desktop.
+
+### Step 2: Create Your Step Issues
+
+1. In your new `github-startup` repository, click the **Actions** tab.
+2. If GitHub asks you to enable workflows, enable them.
+3. Click **Initialize Tutorial Issues**.
+4. Click **Run workflow**.
+5. Wait for the workflow to finish.
+6. Open the **Issues** tab.
+7. Use the generated issues as your step-by-step checklist.
+
+### Then Follow the Generated Issues
 
 - [ ] [Step 3: Install GitHub Desktop and Choose an AI Coding Tool](docs/steps/02-install-github-desktop-antigravity.md)
 - [ ] [Step 4: Sign In to GitHub Desktop](docs/steps/03-sign-in-github-desktop.md)
@@ -66,15 +72,9 @@ Do not click the green Code button yet. You will use that later with GitHub Desk
 
 ## Recommended Tracking
 
-Use GitHub Actions to create one issue for each step. This makes the tutorial easier to follow because each step becomes a small checklist you can close when finished.
+GitHub Actions turns the remaining steps into Issues. Each issue is a small checklist. Close each issue when you finish it.
 
-Step 1 includes this, but here is the short version:
-
-- open the **Actions** tab in your own repo
-- run **Initialize Tutorial Issues**
-- complete and close each generated issue as you finish the steps
-
-If Actions do not work, use the checkboxes in this README as a backup.
+If Actions do not work, use the links in **Then Follow the Generated Issues** as a backup.
 
 ## Tool Notes and Advanced Addendums
 

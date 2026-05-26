@@ -1,8 +1,10 @@
-# Step 1: Create Your GitHub Account, Tutorial Copy, and Step Issues
+# Start Here: Create Your GitHub Account, Tutorial Copy, and Step Issues
 
 ## Goal
 
 Create your own online copy of this starter project and generate step-by-step issues.
+
+The README shows this same start sequence. This file is kept as a reference, but the Action does not create an issue from it.
 
 ## Instructions
 

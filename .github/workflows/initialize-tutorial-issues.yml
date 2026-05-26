@@ -36,6 +36,7 @@ jobs:
             const requiredFiles = fs
               .readdirSync(requiredDir)
               .filter((file) => /^\d{2}-.*\.md$/.test(file))
+              .filter((file) => !file.startsWith('01-'))
               .sort();
 
             if (requiredFiles.length === 0) {

@@ -1,4 +1,4 @@
-# Step 7: Publish with GitHub Pages
+# Step 8: Publish with GitHub Pages
 
 ## Goal
 

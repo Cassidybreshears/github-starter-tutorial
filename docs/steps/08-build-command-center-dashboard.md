@@ -1,4 +1,4 @@
-# Step 8: Build Your Command Center Dashboard
+# Step 9: Build Your Command Center Dashboard
 
 ## Goal
 
