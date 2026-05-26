@@ -75,7 +75,7 @@ Do not click the green **Code** button yet. You will use that later with GitHub 
 
 7. Use the generated issues as your step-by-step checklist.
 
-### Then Follow the Generated Issues
+### NEXT: Follow the Generated Issues
 
 - [ ] [Step 3: Install GitHub Desktop and Choose an AI Coding Tool](docs/steps/02-install-github-desktop-antigravity.md)
 - [ ] [Step 4: Sign In to GitHub Desktop](docs/steps/03-sign-in-github-desktop.md)
