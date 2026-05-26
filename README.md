@@ -71,6 +71,8 @@ Do not click the green **Code** button yet. You will use that later with GitHub 
 <img width="500" alt="status:success" src="https://github.com/user-attachments/assets/b7f9991d-b6ff-4153-84d4-72a28db6a89f" />
 
 6. Open the **Issues** tab.
+<img width="500"  alt="issue tab" src="https://github.com/user-attachments/assets/325af4dd-c58c-4b6b-960c-fefb1f38d523" />
+
 7. Use the generated issues as your step-by-step checklist.
 
 ### Then Follow the Generated Issues
