@@ -2,13 +2,13 @@
 
 Use this index for the required setup path.
 
-1. [Step 1: Create Your Account and Tutorial Copy](01-account-and-template.md)
-2. [Step 2: Create Local Repo Folder and Install VS Code](02-install-tools.md)
-3. [Step 3: Link VS Code to GitHub](03-link-vscode-to-github.md)
-4. [Step 4: Clone `github-startup` in VS Code Source Control](04-clone-repo-locally.md)
-5. [Step 5: Link Antigravity to `github-startup`](05-link-antigravity.md)
-6. [Step 6: Authorize GitHub Extension and Push](06-authorize-github-extension-and-push.md)
-7. [Step 7: Deploy `github-startup` to GitHub Pages](07-deploy-temporary-pages.md)
-8. [Step 8: Build Your Command Center Dashboard](08-choose-project-path.md)
+1. [Step 1: Create Your GitHub Account, Tutorial Copy, and Step Issues](01-account-and-template.md)
+2. [Step 2: Install GitHub Desktop and Choose an AI Coding Tool](02-install-github-desktop-antigravity.md)
+3. [Step 3: Sign In to GitHub Desktop](03-sign-in-github-desktop.md)
+4. [Step 4: Clone Your Repo with GitHub Desktop](04-clone-with-github-desktop.md)
+5. [Step 5: Open the Local Folder in Your AI Coding Tool](05-open-folder-in-ai-tool.md)
+6. [Step 6: Commit and Push with GitHub Desktop](06-commit-push-github-desktop.md)
+7. [Step 7: Publish with GitHub Pages](07-publish-with-github-pages.md)
+8. [Step 8: Build Your Command Center Dashboard](08-build-command-center-dashboard.md)
 
-Optional addendums are listed in [`docs/addendums/README.md`](../addendums/README.md).
+Tool notes and optional addendums are listed in [`docs/addendums/README.md`](../addendums/README.md).

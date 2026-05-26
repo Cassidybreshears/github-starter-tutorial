@@ -1,126 +1,133 @@
-# GitHub Starter Tutorial: Toolchain Setup for New Builders
+# GitHub Starter Tutorial
 
-This tutorial only handles setup.
+This tutorial is for getting one simple website online without using Terminal.
 
-Goal: create one GitHub repository named `github-startup`, clone it locally, and complete a fully authenticated first push from VS Code.
+Default path:
 
-No HTML, CSS, or development experience is required.
+GitHub website -> GitHub Desktop -> `Documents/GitHub` -> your AI coding tool -> GitHub Desktop commit/push -> GitHub Pages
 
-After setup is complete, you turn the deployed page into a project-management
-dashboard based on your **AI+Design Studio Command Center** (Canvas: Project 2,
-Step 2). This is the beginnings, not Project 5.
+No HTML, CSS, command-line, SSH, or Git experience is required.
 
-You are done when you can do all four of these - and do them again, at home,
-by yourself:
+## What You Are Making
 
-1. Understand which coding tool you will use (Claude Code, Codex, or Antigravity).
-2. Know you can get that tool as a desktop app or use it inside VS Code.
-3. Connect it to GitHub.
-4. Publish a webpage via GitHub Pages.
+You will create your own copy of this starter project, download it to your computer, open it in Antigravity, Codex, or Claude Code, make a small website update, push it back to GitHub, and publish it with GitHub Pages.
 
----
+After setup works, you will turn the starter page into a project-management dashboard based on your AI+Design Studio Command Center. This is a beginning version, not Project 5.
+
+## What Each Tool Does
+
+- **GitHub** is where your project lives online.
+- **GitHub Desktop** copies the project to your computer, tracks changes, commits, and pushes without Terminal.
+- **Antigravity, Codex, or Claude Code** is where you open the local project folder and get AI coding help.
+- **GitHub Pages** publishes your static website so you can share a live link.
+
+Your AI coding tool may be a desktop app or something your instructor has you open inside VS Code. Either is fine. GitHub Desktop still handles the GitHub part.
 
 ## What You'll Finish
 
-By the end, you will have:
+By the end, you should have:
+
 - a GitHub repository named `github-startup`
-- a local clone in `Documents/GitHub/github-startup`
-- VS Code connected to your GitHub account
-- Antigravity pointed at that local folder
-- one commit pushed from VS Code as a setup check
-- a live GitHub Pages URL proving deployment works
-- a Command Center dashboard published at that URL (Step 8)
-- optional addendums for Codex, Claude Code, and GitHub CLI auth if needed
+- a local project folder at `Documents/GitHub/github-startup`
+- Antigravity, Codex, or Claude Code opened to that same folder
+- at least one commit pushed from GitHub Desktop
+- a live GitHub Pages link
+- a Command Center dashboard started from the included `index.html`
 
----
+## Required Path
 
-## Step 0: Start Here First (Required)
+Complete these in order.
 
-Before you begin Step 1, create your own copy of this tutorial repo so you can track progress.
+- [ ] [Step 1: Create Your GitHub Account, Tutorial Copy, and Step Issues](docs/steps/01-account-and-template.md)
+- [ ] [Step 2: Install GitHub Desktop and Choose an AI Coding Tool](docs/steps/02-install-github-desktop-antigravity.md)
+- [ ] [Step 3: Sign In to GitHub Desktop](docs/steps/03-sign-in-github-desktop.md)
+- [ ] [Step 4: Clone Your Repo with GitHub Desktop](docs/steps/04-clone-with-github-desktop.md)
+- [ ] [Step 5: Open the Local Folder in Your AI Coding Tool](docs/steps/05-open-folder-in-ai-tool.md)
+- [ ] [Step 6: Commit and Push with GitHub Desktop](docs/steps/06-commit-push-github-desktop.md)
+- [ ] [Step 7: Publish with GitHub Pages](docs/steps/07-publish-with-github-pages.md)
+- [ ] [Step 8: Build Your Command Center Dashboard](docs/steps/08-build-command-center-dashboard.md)
 
-1. Create a GitHub account (if needed).
-2. Open this starter repository.
-3. In the repository header row (same row as **Star**), click **Use this template**.
-4. Create a new repository under your own account.
-5. Continue this tutorial from your new repository copy.
+## Recommended Tracking
 
-> Do **not** click the green **Code** button for this step.
-> If **Use this template** is missing, make sure you are signed in and viewing desktop layout.
->
-> Progress checkboxes and issue closing should happen in your own repo copy, not the original starter repo.
+Use GitHub Actions to create one issue for each step. This makes the tutorial easier to follow because each step becomes a small checklist you can close when finished.
 
----
+Step 1 includes this, but here is the short version:
 
-## Choose Your Tracking Mode
+- open the **Actions** tab in your own repo
+- run **Initialize Tutorial Issues**
+- complete and close each generated issue as you finish the steps
 
-### Track A (Recommended): Generated Issues
+If Actions do not work, use the checkboxes in this README as a backup.
 
-- Open the **Actions** tab in your own repo.
-- Run **Initialize Tutorial Issues**.
-- It creates issues from required steps (`docs/steps/`) and optional addendums (`docs/addendums/`).
-- Complete and close each issue as you go.
+## Tool Notes and Advanced Addendums
 
-### Track B (Optional): File-Based Steps + Progress Tracker
+The required workflow works with Antigravity, Codex, or Claude Code. Choose one for the main tutorial. You can try the others later.
 
-- Read each step file in `docs/steps/`.
-- Create one issue from the **Tutorial Progress Tracker** issue template.
-- Check off progress in that single tracker issue.
+- [Codex folder check](docs/addendums/addendum-a-link-codex.md)
+- [Claude Code folder check](docs/addendums/addendum-b-link-claude-code.md)
+- [GitHub CLI / Terminal authentication](docs/addendums/addendum-c-github-cli-login.md) - advanced only
+- [VS Code folder check](docs/addendums/addendum-d-open-in-vscode.md) - optional editor only
 
----
+## Troubleshooting
 
-## Required Setup Steps
+### I cloned the wrong folder.
 
-- [ ] [Step 1: Create Your Account and Tutorial Copy](docs/steps/01-account-and-template.md)
-- [ ] [Step 2: Create Local Repo Folder and Install VS Code](docs/steps/02-install-tools.md)
-- [ ] [Step 3: Link VS Code to GitHub](docs/steps/03-link-vscode-to-github.md)
-- [ ] [Step 4: Clone `github-startup` in VS Code Source Control](docs/steps/04-clone-repo-locally.md)
-- [ ] [Step 5: Link Antigravity to `github-startup`](docs/steps/05-link-antigravity.md)
-- [ ] [Step 6: Authorize GitHub Extension and Push](docs/steps/06-authorize-github-extension-and-push.md)
-- [ ] [Step 7: Deploy `github-startup` to GitHub Pages](docs/steps/07-deploy-temporary-pages.md)
-- [ ] [Step 8: Build Your Command Center Dashboard](docs/steps/08-choose-project-path.md)
+In GitHub Desktop, choose **Repository > Show in Finder** or **Repository > Show in Explorer**.
 
-## Optional Addendums
+The folder should be:
 
-- [ ] [Addendum A (Optional): Link Codex to `github-startup`](docs/addendums/addendum-a-link-codex.md)
-- [ ] [Addendum B (Optional): Link Claude Code to `github-startup`](docs/addendums/addendum-b-link-claude-code.md)
-- [ ] [Addendum C (Optional): Log In to GitHub CLI (`gh`)](docs/addendums/addendum-c-github-cli-login.md)
+`Documents/GitHub/github-startup`
 
----
+If you see the original `github-starter-tutorial` folder instead, go back to GitHub and make sure you created your own `github-startup` repo with **Use this template**.
 
-## After Setup: Your Command Center Dashboard
+### My AI coding tool cannot see my files.
 
-Once setup is complete, [Step 8](docs/steps/08-choose-project-path.md) walks
-you through it: using your AI coding tool, run the **Interview &#8594;
-Brainstorm &#8594; Plan &#8594; Code &#8594; Commit** loop to turn the
-deployed `index.html` into a dashboard based on your AI+Design Studio Command
-Center. Keep or trim the seven sections - all of them or a subset of what you
-built. Beginnings-level content is fine.
+Open the exact local folder:
 
-Submit your live GitHub Pages URL on the **GitHub Starter Tutorial**
-assignment in Canvas.
+`Documents/GitHub/github-startup`
 
----
+You should see files such as `README.md`, `index.html`, and `style.css`. If not, close the folder in your AI coding tool and open it again from `Documents/GitHub`.
 
-## Need Help?
+### GitHub Desktop shows too many changed files.
 
-- If a tool cannot see files, confirm you opened `Documents/GitHub/github-startup`.
-- If VS Code cannot clone from GitHub, re-check Step 3 sign-in.
-- If push fails with `failed to authenticate`, run `git config --global credential.helper`.
-- If helper is `store`, run `git config --global --unset credential.helper` and try push again.
-- If terminal tools cannot authenticate, run `gh auth login` (see Addendum C).
-- If GitHub Pages does not update immediately, wait 2-5 minutes and hard refresh.
+You may have opened the wrong folder, or your AI coding tool may have created extra hidden files.
 
----
+First check that GitHub Desktop is using `github-startup`, not your whole `Documents` folder or desktop. Then look at the changed file list. For this tutorial, normal changes usually include `index.html`, `style.css`, or `README.md`.
 
-## Why GitHub?
+If you are unsure, ask before committing.
 
-From real-world AI development workflows, GitHub is the fastest way to get running because it gives you one shared source of truth for your code.
+### My GitHub Pages link is not updating.
 
-- Your repository is the handoff point between you and AI tools.
-- You get version history, rollback, and clear change tracking by default.
-- You can deploy quickly with GitHub Pages and share a working URL.
-- You can switch between Antigravity, Codex, and Claude Code without changing your core workflow.
+GitHub Pages can take a few minutes.
 
----
+Check these in order:
 
-Small setup wins now make every project easier later.
+- Did you click **Commit to main** in GitHub Desktop?
+- Did you click **Push origin**?
+- On GitHub, does your repo show the new file changes?
+- In **Settings > Pages**, is the source set to `main` and `/ (root)`?
+- Wait 2-5 minutes, then refresh the live page.
+
+### I edited files but do not know how to push.
+
+Open GitHub Desktop.
+
+1. Make sure the current repository is `github-startup`.
+2. Review the changed files on the left.
+3. Write a short summary, such as `Update dashboard`.
+4. Click **Commit to main**.
+5. Click **Push origin**.
+
+## Final Submission Checklist
+
+Submit what your instructor asks for in Canvas.
+
+- [ ] GitHub repository link
+- [ ] GitHub Pages link
+- [ ] Screenshot of GitHub Desktop after pushing, if requested
+
+## Why This Matters
+
+GitHub gives your project one reliable online home. GitHub Desktop lets you work with that online project without Terminal. Antigravity, Codex, or Claude Code can help you edit the local files. GitHub Pages turns the project into a live website.
+
+Once this loop works, you can use it again for future design, web, and AI+design projects.

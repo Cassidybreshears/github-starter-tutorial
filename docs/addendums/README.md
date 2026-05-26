@@ -1,7 +1,8 @@
-# Optional Addendums Index
+# Tool Notes and Advanced Addendums
 
-Use these optional addendums after finishing required setup steps.
+The required workflow works with Antigravity, Codex, or Claude Code. These notes help you check that the tool can see the right folder.
 
-A. [Addendum A (Optional): Link Codex to `github-startup`](addendum-a-link-codex.md)
-B. [Addendum B (Optional): Link Claude Code to `github-startup`](addendum-b-link-claude-code.md)
-C. [Addendum C (Optional): Log In to GitHub CLI (`gh`)](addendum-c-github-cli-login.md)
+A. [Open This Folder in Codex](addendum-a-link-codex.md)
+B. [Open This Folder in Claude Code](addendum-b-link-claude-code.md)
+C. [GitHub CLI / Terminal Authentication](addendum-c-github-cli-login.md) - advanced only
+D. [Open This Folder in VS Code](addendum-d-open-in-vscode.md) - optional editor only
