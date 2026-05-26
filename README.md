@@ -41,7 +41,7 @@ Start here in the README. After Step 2, GitHub will create the rest of the tutor
 ### Step 1: Create Your Tutorial Repo
 
 1. Create a GitHub account if you do not already have one.
-2. Open the original `github-starter-tutorial` repository.
+2. Open the original `github-starter-tutorial` repository *(if your reading this you are in the repo)*
 3. Click **Use this template**.
 4. Choose **Create a new repository**.
 5. Name your new repository `github-startup`.
