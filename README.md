@@ -67,7 +67,9 @@ Do not click the green **Code** button yet. You will use that later with GitHub 
 4. Click **Run workflow**.
 <img width="500" alt="click on run workflows" src="https://github.com/user-attachments/assets/3c44588b-8be9-4537-b747-73cf4880b1a1" />
 
-5. Wait for the workflow to finish.
+5. Wait for the workflow to finish, it will say status:success when complete.
+<img width="500" alt="status:success" src="https://github.com/user-attachments/assets/b7f9991d-b6ff-4153-84d4-72a28db6a89f" />
+
 6. Open the **Issues** tab.
 7. Use the generated issues as your step-by-step checklist.
 
