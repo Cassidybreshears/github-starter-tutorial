@@ -58,10 +58,12 @@ Do not click the green **Code** button yet. You will use that later with GitHub 
 ### Step 2: Create Your Step Issues
 
 1. In your new `github-startup` repository, click the **Actions** tab.
-<img width="500" alt="CleanShot 2026-05-26 at 15 43 44@2x" src="https://github.com/user-attachments/assets/2c0a42d4-60e7-4b0d-aeb1-37f6979394a5" />
+<img width="500" alt="click the actions tab" src="https://github.com/user-attachments/assets/2c0a42d4-60e7-4b0d-aeb1-37f6979394a5" />
 
 2. If GitHub asks you to enable workflows, enable them.
 3. Click **Initialize Tutorial Issues**.
+<img width="500" alt="initialize workflows" src="https://github.com/user-attachments/assets/73ad989b-f078-4b98-bcb5-b12e2ebb40dc" />
+
 4. Click **Run workflow**.
 5. Wait for the workflow to finish.
 6. Open the **Issues** tab.
