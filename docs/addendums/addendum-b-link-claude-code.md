@@ -8,7 +8,7 @@ Open the same local project folder in Claude Code.
 
 ## Instructions
 
-1. Open Claude Code.
+1. Open Claude Code or its overview page: <https://code.claude.com/docs/en/overview>
 2. Open or select this folder:
 
    `Documents/GitHub/github-startup`

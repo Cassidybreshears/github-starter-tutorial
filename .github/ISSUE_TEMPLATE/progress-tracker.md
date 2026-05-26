@@ -19,8 +19,8 @@ assignees: ""
 
 ## Tool Notes and Advanced Addendums
 
-- [ ] Addendum A: Open This Folder in Codex (`docs/addendums/addendum-a-link-codex.md`)
-- [ ] Addendum B: Open This Folder in Claude Code (`docs/addendums/addendum-b-link-claude-code.md`)
+- [ ] Addendum A: Open This Folder in Codex (`docs/addendums/addendum-a-link-codex.md`) - <https://chatgpt.com/codex/>
+- [ ] Addendum B: Open This Folder in Claude Code (`docs/addendums/addendum-b-link-claude-code.md`) - <https://code.claude.com/docs/en/overview>
 - [ ] Addendum C: GitHub CLI / Terminal Authentication (`docs/addendums/addendum-c-github-cli-login.md`)
 - [ ] Addendum D: Open This Folder in VS Code (`docs/addendums/addendum-d-open-in-vscode.md`)
 

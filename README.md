@@ -96,8 +96,8 @@ If Actions do not work, use the links in **Then Follow the Generated Issues** as
 
 The required workflow works with Antigravity, Codex, or Claude Code. Choose one for the main tutorial. You can try the others later.
 
-- [Codex folder check](docs/addendums/addendum-a-link-codex.md)
-- [Claude Code folder check](docs/addendums/addendum-b-link-claude-code.md)
+- [Codex](https://chatgpt.com/codex/) folder check: [Addendum A](docs/addendums/addendum-a-link-codex.md)
+- [Claude Code](https://code.claude.com/docs/en/overview) folder check: [Addendum B](docs/addendums/addendum-b-link-claude-code.md)
 - [GitHub CLI / Terminal authentication](docs/addendums/addendum-c-github-cli-login.md) - advanced only
 - [VS Code folder check](docs/addendums/addendum-d-open-in-vscode.md) - optional editor only
 

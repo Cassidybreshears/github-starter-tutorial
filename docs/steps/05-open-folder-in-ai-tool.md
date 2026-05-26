@@ -27,8 +27,8 @@ Open the same project folder in Antigravity, Codex, or Claude Code so your AI to
 ## Tool Notes
 
 - **Antigravity:** Open or add the `github-startup` folder as your project folder.
-- **Codex:** Open or select `Documents/GitHub/github-startup`, then ask it to list files.
-- **Claude Code:** Open or select `Documents/GitHub/github-startup`, then ask it to list files. If your Claude Code setup requires Terminal and you are not comfortable with Terminal, use Antigravity or Codex for now.
+- **Codex:** Open <https://chatgpt.com/codex/>, select `Documents/GitHub/github-startup`, then ask it to list files.
+- **Claude Code:** Open the Claude Code overview at <https://code.claude.com/docs/en/overview>, select `Documents/GitHub/github-startup`, then ask it to list files. If your Claude Code setup requires Terminal and you are not comfortable with Terminal, use Antigravity or Codex for now.
 
 ## Checklist
 

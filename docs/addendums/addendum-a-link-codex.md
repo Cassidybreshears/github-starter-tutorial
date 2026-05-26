@@ -8,7 +8,7 @@ Open the same local project folder in Codex.
 
 ## Instructions
 
-1. Open Codex.
+1. Open Codex: <https://chatgpt.com/codex/>
 2. Open or select this folder:
 
    `Documents/GitHub/github-startup`

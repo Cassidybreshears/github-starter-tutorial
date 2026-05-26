@@ -10,8 +10,8 @@ Install GitHub Desktop and choose the AI coding tool you will use.
 2. Choose one AI coding tool:
 
    - Antigravity: <https://antigravity.google/>
-   - Codex
-   - Claude Code
+   - Codex: <https://chatgpt.com/codex/>
+   - Claude Code: <https://code.claude.com/docs/en/overview>
 
 3. Install or open the tool you chose. Use the desktop app or the VS Code version if that is what your instructor assigned.
 4. In Finder or File Explorer, open your **Documents** folder.
