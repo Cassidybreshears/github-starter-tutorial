@@ -35,17 +35,34 @@ By the end, you should have:
 - a Command Center dashboard started from the included `index.html`
 
 ## Required Path
-
+PUT STEP 1 here: 
 Complete these in order.
+start here: 
+**Instructions**
+Create a GitHub account if you do not already have one.
+Open the original github-starter-tutorial repository.
+Click Use this template.
+Choose Create a new repository.
+Name your new repository github-startup.
+this is step 2 keep it in the readme
+Now go to your new repository(repo). Open your new github-startup repository.
+Click the Actions tab.
+If GitHub asks you to enable workflows, enable them.
+Click Initialize Tutorial Issues.
+Click Run workflow.
+Wait for the workflow to finish.
+Open the Issues tab.
+Use the generated issues as your step-by-step checklist.
+Do not click the green Code button yet. You will use that later with GitHub Desktop.
 
-- [ ] [Step 1: Create Your GitHub Account, Tutorial Copy, and Step Issues](docs/steps/01-account-and-template.md)
-- [ ] [Step 2: Install GitHub Desktop and Choose an AI Coding Tool](docs/steps/02-install-github-desktop-antigravity.md)
-- [ ] [Step 3: Sign In to GitHub Desktop](docs/steps/03-sign-in-github-desktop.md)
-- [ ] [Step 4: Clone Your Repo with GitHub Desktop](docs/steps/04-clone-with-github-desktop.md)
-- [ ] [Step 5: Open the Local Folder in Your AI Coding Tool](docs/steps/05-open-folder-in-ai-tool.md)
-- [ ] [Step 6: Commit and Push with GitHub Desktop](docs/steps/06-commit-push-github-desktop.md)
-- [ ] [Step 7: Publish with GitHub Pages](docs/steps/07-publish-with-github-pages.md)
-- [ ] [Step 8: Build Your Command Center Dashboard](docs/steps/08-build-command-center-dashboard.md)
+
+- [ ] [Step 3: Install GitHub Desktop and Choose an AI Coding Tool](docs/steps/02-install-github-desktop-antigravity.md)
+- [ ] [Step 4: Sign In to GitHub Desktop](docs/steps/03-sign-in-github-desktop.md)
+- [ ] [Step 5: Clone Your Repo with GitHub Desktop](docs/steps/04-clone-with-github-desktop.md)
+- [ ] [Step 6: Open the Local Folder in Your AI Coding Tool](docs/steps/05-open-folder-in-ai-tool.md)
+- [ ] [Step 7: Commit and Push with GitHub Desktop](docs/steps/06-commit-push-github-desktop.md)
+- [ ] [Step 8: Publish with GitHub Pages](docs/steps/07-publish-with-github-pages.md)
+- [ ] [Step 9: Build Your Command Center Dashboard](docs/steps/08-build-command-center-dashboard.md)
 
 ## Recommended Tracking
 
