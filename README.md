@@ -49,7 +49,9 @@ Start here in the README. After Step 2, GitHub will create the rest of the tutor
 5. Name your new repository `github-startup`.
 <img width="500" alt="name your repository github-startup" src="https://github.com/user-attachments/assets/0f543456-20c0-4269-ad5b-1c66bf783bdf" />
 
-6. Open your new `github-startup` repository.
+6. When your repo is generated, it will open in your new `github-startup` repository.
+<img width="500" alt="github-starter repo initilized" src="https://github.com/user-attachments/assets/0387bb00-6639-4f56-84c9-928bce02061c" />
+
 
 Do not click the green **Code** button yet. You will use that later with GitHub Desktop.
 
