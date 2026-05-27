@@ -4,17 +4,16 @@ Use this index for the required setup path.
 
 Start in the main README:
 
-1. Create your `github-startup` repo.
+1. Create your `github-startup` repo from the template.
 2. Run **Initialize Tutorial Issues** from the Actions tab.
 
 Then follow the generated Issues:
 
-3. [Step 3: Install GitHub Desktop and Choose an AI Coding Tool](02-install-github-desktop-antigravity.md)
-4. [Step 4: Sign In to GitHub Desktop](03-sign-in-github-desktop.md)
-5. [Step 5: Clone Your Repo with GitHub Desktop](04-clone-with-github-desktop.md)
-6. [Step 6: Open the Local Folder in Your AI Coding Tool](05-open-folder-in-ai-tool.md)
-7. [Step 7: Commit and Push with GitHub Desktop](06-commit-push-github-desktop.md)
-8. [Step 8: Publish with GitHub Pages](07-publish-with-github-pages.md)
-9. [Step 9: Build Your Command Center Dashboard](08-build-command-center-dashboard.md)
+3. [Install GitHub Desktop and Clone Your Repo](02-install-github-desktop.md)
+4. [Open Your Folder in the AI Coding Tool and Build Your Dashboard](03-open-in-ai-tool-and-build.md)
+5. [Commit and Push from GitHub Desktop](04-commit-push-from-desktop.md)
+6. [Publish Your Dashboard with GitHub Pages](05-publish-with-github-pages.md)
 
-Tool notes and optional addendums are listed in [`docs/addendums/README.md`](../addendums/README.md).
+The order is design-before-deploy: you build your dashboard locally with an AI tool first, then publish the finished page. The first thing visitors see at your live URL is your real work.
+
+Tool notes and optional addendums (opencode + free vision, Codex, Claude Code, browser-edit, etc.) are listed in [`docs/addendums/README.md`](../addendums/README.md).

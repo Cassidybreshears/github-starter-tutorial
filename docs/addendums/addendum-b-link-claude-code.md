@@ -16,7 +16,7 @@ Open the same local project folder in Claude Code.
 3. Ask Claude Code to list the files it can see.
 4. Confirm it can see `README.md`, `index.html`, and `style.css`.
 
-If Claude Code on your computer requires Terminal and you are not comfortable with Terminal, use Antigravity or Codex for now.
+If Claude Code on your computer requires Terminal and you are not comfortable with Terminal, see `addendum-e-opencode-and-deepseek.md` for a free path that does not require Terminal.
 
 ## Checklist
 

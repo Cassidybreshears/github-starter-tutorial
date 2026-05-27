@@ -6,65 +6,77 @@ No HTML, CSS, command-line, SSH, or Git experience is required.
 
 ## Quick start (what you're doing)
 
-1. **Create a repo** — your own copy of this project on GitHub
-2. **Upload your files** — drag your project into the browser
-3. **Edit & commit in the browser** — press `.` to open the web editor, make changes, save
-4. **Publish with Pages** — turns your repo into a live website
-5. **Install GitHub Desktop + clone** — copies the repo to your computer
-6. **Open in an AI coding tool** — use AI to build out your project
-7. **Commit and push** — send your AI-built changes back up
+**Setup (one-time):**
 
-Steps 1–4 get you a live site in 5 minutes with zero installs. Steps 5–7 add the AI workflow.
+1. **Create a repo** -- your own copy of this project on GitHub from the template.
+2. **Run Initialize Tutorial Issues** -- generates a step-by-step checklist of GitHub Issues.
+
+**Build your dashboard:**
+
+1. **Install GitHub Desktop + clone** -- copies the repo to your computer.
+2. **Open in an AI coding tool and build the dashboard** -- use opencode, Codex, or Claude Code to design your page locally with your own research artifacts.
+3. **Commit and push** -- save and send your work to GitHub via GitHub Desktop.
+4. **Publish with GitHub Pages** -- turn your repo into a live website.
+
+You design and build before you publish. The first thing visitors see at your live URL is your real dashboard, not a blank template.
 
 ## What each tool does
 
-- **GitHub** — where your project lives online
-- **github.dev** — a code editor that opens in your browser when you press `.` (period) on a repo page
-- **GitHub Pages** — publishes your HTML files as a live website
-- **GitHub Desktop** — copies the repo to your computer so you can work with local files and AI tools
-- **Antigravity, Codex, or Claude Code** — AI coding tools that can read and edit your local files
+- **GitHub** -- where your project lives online.
+- **GitHub Desktop** -- copies the repo to your computer so AI coding tools can read and write your local files.
+- **opencode / Codex / Claude Code** -- AI coding tools that read your folder, look at your research artifacts, and write the dashboard for you.
+- **GitHub Pages** -- publishes your finished dashboard as a live website.
+- **github.dev** -- optional browser-only editor for quick text edits. See `docs/addendums/addendum-f-github-dev-browser-edit.md`.
 
 ## What you'll finish
 
-- a GitHub repository named `github-startup`
-- a live GitHub Pages link
-- GitHub Desktop installed and connected to your repo
-- a local project folder at `Documents/GitHub/github-startup`
-- an AI coding tool opened to that same folder
-- a Command Center dashboard
+- A GitHub repository named `github-startup`.
+- GitHub Desktop installed and connected to your repo.
+- A local project folder at `Documents/GitHub/github-startup`.
+- An AI coding tool opened to that same folder.
+- A personal research dashboard, built with the AI, committed and pushed.
+- A live GitHub Pages link.
 
-## Steps
+## Setup
 
 ### Step 1: Create your repo
 
 1. Create a GitHub account if you don't have one: https://github.com/signup
-2. Open the original `github-starter-tutorial` repository (you're here now)
-3. Click **Use this template**
-4. Choose **Create a new repository**
-5. Name it `github-startup`
-6. Make it **Public**
+2. Open the original `github-starter-tutorial` repository (you're here now).
+3. Click **Use this template**.
+4. Choose **Create a new repository**.
+5. Name it `github-startup`.
+6. Make it **Public**.
 
 ### Step 2: Run Initialize Tutorial Issues
 
-1. In your new `github-startup` repo, click the **Actions** tab
-2. If asked, enable workflows
-3. Click **Initialize Tutorial Issues** → **Run workflow**
-4. Wait for it to finish (green checkmark)
-5. Open the **Issues** tab — the remaining steps are now issue checklists
+1. In your new `github-startup` repo, click the **Actions** tab.
+2. If asked, enable workflows.
+3. Click **Initialize Tutorial Issues** -> **Run workflow**.
+4. Wait for it to finish (green checkmark).
+5. Open the **Issues** tab -- the remaining steps are now issue checklists.
 
-### Then follow the generated issues
+## Then follow the generated issues
 
-- [ ] [Step 3: Upload Files and Edit with github.dev](docs/steps/02-upload-and-github-dev.md)
-- [ ] [Step 4: Publish with GitHub Pages](docs/steps/03-publish-with-github-pages.md)
-- [ ] [Step 5: Install GitHub Desktop and Clone Your Repo](docs/steps/04-install-github-desktop.md)
-- [ ] [Step 6: Open in Your AI Coding Tool and Build Your Dashboard](docs/steps/05-open-in-ai-tool-and-build.md)
-- [ ] [Step 7: Commit and Push from GitHub Desktop](docs/steps/06-commit-push-from-desktop.md)
+- [ ] [Install GitHub Desktop and Clone Your Repo](docs/steps/02-install-github-desktop.md)
+- [ ] [Open Your Folder in the AI Coding Tool and Build Your Dashboard](docs/steps/03-open-in-ai-tool-and-build.md)
+- [ ] [Commit and Push from GitHub Desktop](docs/steps/04-commit-push-from-desktop.md)
+- [ ] [Publish Your Dashboard with GitHub Pages](docs/steps/05-publish-with-github-pages.md)
+
+## Optional addendums
+
+- [Use opencode and the Free Vision Model](docs/addendums/addendum-e-opencode-and-deepseek.md) -- free path through Step 3 with vision support.
+- [Open This Folder in Codex](docs/addendums/addendum-a-link-codex.md) -- paid, requires ChatGPT Pro.
+- [Open This Folder in Claude Code](docs/addendums/addendum-b-link-claude-code.md) -- paid.
+- [Edit Files in the Browser with github.dev](docs/addendums/addendum-f-github-dev-browser-edit.md) -- optional, for quick browser-only text edits.
+
+See `docs/addendums/README.md` for the full list.
 
 ## Troubleshooting
 
 ### My GitHub Pages link is not updating
 
-Pages can take a few minutes. Check: did you commit and push? On GitHub, does your repo show the new changes? In Settings > Pages, is the source set to `main` and `/ (root)`? Wait 2–5 minutes and refresh.
+Pages can take a few minutes. Check: did you commit and push? On GitHub, does your repo show the new changes? In Settings > Pages, is the source set to `main` and `/ (root)`? Wait 2-5 minutes and refresh.
 
 ### I cloned the wrong folder
 
@@ -73,6 +85,10 @@ In GitHub Desktop, click **Repository > Show in Finder** or **Repository > Show 
 ### My AI coding tool cannot see my files
 
 Open the exact folder: `Documents/GitHub/github-startup`. You should see `index.html`, `style.css`, and `README.md`. If not, close and reopen the folder in your AI tool.
+
+### opencode cannot read my reference images
+
+You probably need to switch the model. See `docs/addendums/addendum-e-opencode-and-deepseek.md` for the model picker step.
 
 ### GitHub Desktop shows too many changed files
 
@@ -84,10 +100,8 @@ Open GitHub Desktop. Make sure the current repo is `github-startup`. Write a sum
 
 ## Submission checklist
 
-- [ ] GitHub repository link
-- [ ] GitHub Pages link
-- [ ] Screenshot of GitHub Desktop after push, if requested
+- [ ] Live GitHub Pages URL (paste into Canvas).
 
 ## Why this matters
 
-GitHub is where your project lives. The browser editor (github.dev) lets you make quick changes without installing anything. GitHub Desktop connects your local computer to your GitHub repo so AI coding tools can work with your files. GitHub Pages publishes the result. Once this loop works, you can use it for any web project.
+GitHub is where your project lives. GitHub Desktop connects your local computer to your GitHub repo so AI coding tools can work with your files. The AI tool reads your research artifacts and writes the dashboard. GitHub Pages publishes the result. Once this loop works, you can use it for any web project.

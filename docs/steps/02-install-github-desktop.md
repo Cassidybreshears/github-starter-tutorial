@@ -1,8 +1,8 @@
-# Step 5: Install GitHub Desktop and Clone Your Repo
+# Install GitHub Desktop and Clone Your Repo
 
 ## Goal
 
-Copy your online repo to your computer so you can use AI coding tools with your local files.
+Copy your online repo to your computer so you can build your dashboard with an AI coding tool.
 
 ## Instructions
 
@@ -15,7 +15,7 @@ Copy your online repo to your computer so you can use AI coding tools with your 
 ### Part B: Sign in
 
 1. In GitHub Desktop, click **Sign in to GitHub.com**.
-2. Your browser will open — sign in to your GitHub account and authorize the connection.
+2. Your browser will open. Sign in to your GitHub account and authorize the connection.
 3. Go back to GitHub Desktop. You should see your account name.
 
 ### Part C: Clone your repo

@@ -1,6 +1,6 @@
 # Addendum D: Open This Folder in VS Code
 
-VS Code is optional for this tutorial. The required path uses Antigravity, Codex, or Claude Code for AI help and GitHub Desktop for commit/push.
+VS Code is optional for this tutorial. The required path uses opencode, Codex, or Claude Code for AI help and GitHub Desktop for commit/push.
 
 ## Goal
 
