@@ -3,81 +3,512 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AI+Design Studio Command Center</title>
+  <meta name="description" content="With The Assist — a personal research dashboard exploring AI-assisted effects and transitions for sports video editing." />
+  <title>With The Assist · Research Dashboard</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-<!--
-  THIS IS YOUR DASHBOARD. GitHub Pages serves this file.
-  Replace the placeholder text below with the real content from your
-  AI+Design Studio Command Center (Canvas: Project 2, Step 2).
-  KEEP OR TRIM: delete any <section> you did not build - all seven or a
-  subset is fine. Beginnings-level content is fine; this is the on-ramp,
-  not Project 5. Make it yours; do not leave it looking like a template.
--->
 <body>
-  <header class="site-header">
-    <p class="eyebrow">AI + Design Studio &#183; Command Center</p>
-    <h1 id="project-title">Your Project Title</h1>
-    <p class="tagline">One-line summary of what you are investigating &#8212; and your name.</p>
-  </header>
 
-  <main class="container">
+  <!-- ============ SVG ICON SPRITE ============ -->
+  <svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+    <symbol id="i-grid" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></symbol>
+    <symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.4"/></symbol>
+    <symbol id="i-compass" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m15.6 8.4-2.1 5.1-5.1 2.1 2.1-5.1z"/></symbol>
+    <symbol id="i-map" viewBox="0 0 24 24"><path d="m3 6 6-3 6 3 6-3v15l-6 3-6-3-6 3z"/><path d="M9 3v15M15 6v15"/></symbol>
+    <symbol id="i-layers" viewBox="0 0 24 24"><path d="m12 3 9 5-9 5-9-5z"/><path d="m3 12 9 5 9-5"/><path d="m3 16 9 5 9-5"/></symbol>
+    <symbol id="i-flask" viewBox="0 0 24 24"><path d="M9 3h6M10 3v6L4.5 18a2 2 0 0 0 1.7 3h11.6a2 2 0 0 0 1.7-3L14 9V3"/><path d="M7 15h10"/></symbol>
+    <symbol id="i-image" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="8.5" cy="9.5" r="1.5"/><path d="m21 16-5-5L5 20"/></symbol>
+    <symbol id="i-terminal" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="m7 9 3 3-3 3M13 15h4"/></symbol>
+    <symbol id="i-link" viewBox="0 0 24 24"><path d="M10 13a5 5 0 0 0 7.5.5l2-2a5 5 0 0 0-7-7l-1 1"/><path d="M14 11a5 5 0 0 0-7.5-.5l-2 2a5 5 0 0 0 7 7l1-1"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+    <symbol id="i-external" viewBox="0 0 24 24"><path d="M14 4h6v6M20 4l-9 9"/><path d="M19 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h5"/></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></symbol>
+    <symbol id="i-left" viewBox="0 0 24 24"><path d="m15 5-7 7 7 7"/></symbol>
+    <symbol id="i-right" viewBox="0 0 24 24"><path d="m9 5 7 7-7 7"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 5 5L20 7"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-spark" viewBox="0 0 24 24"><path d="m12 3 1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8z"/><path d="m19 17 .7 1.8 1.8.7-1.8.7L19 22l-.7-1.8-1.8-.7 1.8-.7z"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+    <symbol id="i-book" viewBox="0 0 24 24"><path d="M4 5a2 2 0 0 1 2-2h13v18H6a2 2 0 0 1-2-2z"/><path d="M4 17h15"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24"><path d="M20 15a3 3 0 0 1-3 3H8l-4 3V6a3 3 0 0 1 3-3h10a3 3 0 0 1 3 3z"/></symbol>
+    <symbol id="i-code" viewBox="0 0 24 24"><path d="m8 8-4 4 4 4M16 8l4 4-4 4M14 5l-4 14"/></symbol>
+    <symbol id="i-folder" viewBox="0 0 24 24"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path d="m8 5 11 7-11 7z"/></symbol>
+    <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 3v12M7 10l5 5 5-5M4 20h16"/></symbol>
+  </svg>
 
-    <!-- Project Identity Card -->
-    <section aria-labelledby="identity-h">
-      <h2 id="identity-h">Project Identity Card</h2>
-      <p>Title, curiosity statement, short summary, audience / context, and possible final direction(s).</p>
-    </section>
+  <!-- ============ SIDEBAR ============ -->
+  <aside class="sidebar" id="sidebar" aria-label="Primary navigation">
+    <div class="brand">
+      <div class="brand-mark"><svg><use href="#i-play"/></svg></div>
+      <div class="brand-text">
+        <strong>With The Assist</strong>
+        <span>AI × Sports Editing Research</span>
+      </div>
+    </div>
 
-    <!-- Inquiry Brief -->
-    <section aria-labelledby="inquiry-h">
-      <h2 id="inquiry-h">Inquiry Brief</h2>
-      <p>Your research question, why it matters, what you need to learn, and 2&#8211;3 possible final outcomes.</p>
-    </section>
+    <nav class="side-nav" id="sideNav">
+      <div class="nav-label">DASHBOARD</div>
+      <a class="nav-item active" href="#overview" data-section="overview"><svg><use href="#i-grid"/></svg><span>Overview</span></a>
+      <a class="nav-item" href="#territory" data-section="territory"><svg><use href="#i-target"/></svg><span>Territory Pitch</span></a>
+      <a class="nav-item" href="#inquiry" data-section="inquiry"><svg><use href="#i-compass"/></svg><span>Inquiry Brief</span></a>
+      <a class="nav-item" href="#sources" data-section="sources"><svg><use href="#i-map"/></svg><span>Sources &amp; Notes</span></a>
+      <a class="nav-item" href="#effects" data-section="effects"><svg><use href="#i-layers"/></svg><span>Effects Library</span></a>
+      <a class="nav-item" href="#log" data-section="log"><svg><use href="#i-flask"/></svg><span>Experiment Log</span></a>
+      <a class="nav-item" href="#images" data-section="images"><svg><use href="#i-image"/></svg><span>Reference Images</span></a>
+      <a class="nav-item" href="#prompts" data-section="prompts"><svg><use href="#i-terminal"/></svg><span>Prompts &amp; Tools</span></a>
+      <a class="nav-item" href="#workspace" data-section="workspace"><svg><use href="#i-link"/></svg><span>Workspace Links</span></a>
+    </nav>
 
-    <!-- Source Starter List -->
-    <section aria-labelledby="sources-h">
-      <h2 id="sources-h">Source Starter List</h2>
-      <ul>
-        <li>Source 1 &#8212; title, creator, link, type, why it matters</li>
-        <li>Source 2 &#8212; title, creator, link, type, why it matters</li>
-        <li>Source 3 &#8212; optional</li>
-      </ul>
-    </section>
+    <div class="side-foot">
+      <div class="side-foot-line"></div>
+      <span class="side-foot-label">RESEARCH BY</span>
+      <strong>Cassidy Breshears</strong>
+      <span class="side-foot-sub">DESN 368 · Fall 2026</span>
+    </div>
+  </aside>
+  <div class="scrim" id="scrim"></div>
 
-    <!-- Project Brief / Weekly Roadmap -->
-    <section aria-labelledby="roadmap-h">
-      <h2 id="roadmap-h">Project Brief / Weekly Roadmap</h2>
-      <p>Weeks 5&#8211;11: goal, activities, tools, output, and success indicator for each week.</p>
-    </section>
+  <!-- ============ MAIN ============ -->
+  <div class="main" id="main">
+    <header class="topbar">
+      <button class="icon-btn menu-btn" id="menuBtn" aria-label="Open menu"><svg><use href="#i-menu"/></svg></button>
+      <div class="crumb"><span>Dashboard</span><svg><use href="#i-right"/></svg><strong id="crumbTitle">Overview</strong></div>
+      <div class="topbar-right">
+        <span class="topbar-tag"><span class="dot"></span> Research in progress</span>
+        <span class="topbar-date">19 Nov 2026</span>
+      </div>
+    </header>
 
-    <!-- Prompt Log -->
-    <section aria-labelledby="prompts-h">
-      <h2 id="prompts-h">Prompt Log</h2>
-      <p>Each entry: the prompt used, model / tool, output summary, and what changed afterward.</p>
-    </section>
+    <div class="rq-strip">
+      <span class="rq-chip"><svg><use href="#i-spark"/></svg> RESEARCH QUESTION</span>
+      <span class="rq-text">How can AI help sports editors by receiving step-by-step tutorials on how to edit certain effects in editing software?</span>
+    </div>
 
-    <!-- Experiment Log -->
-    <section aria-labelledby="experiments-h">
-      <h2 id="experiments-h">Experiment Log</h2>
-      <p>Each experiment: what you tried, notes, what worked, what failed, and the next step.</p>
-    </section>
+    <div class="progress" id="progress"></div>
 
-    <!-- Links / Workspace Board -->
-    <section aria-labelledby="links-h">
-      <h2 id="links-h">Links / Workspace Board</h2>
-      <ul>
-        <li>Milanote / Notion / Figma board</li>
-        <li>AI tools used</li>
-        <li>Repo / site link</li>
-        <li>Working files (Figma, code, assets)</li>
-      </ul>
-    </section>
+    <main class="content">
 
-  </main>
+      <!-- ===== OVERVIEW ===== -->
+      <section class="view active" id="overview">
+        <div class="hero">
+          <div class="hero-glow"></div>
+          <div class="hero-inner">
+            <span class="eyebrow"><span class="eyebrow-line"></span> PERSONAL RESEARCH DASHBOARD · AI + DESIGN STUDIO</span>
+            <h1>With <em>The Assist</em></h1>
+            <p class="lede">A research command center exploring how AI can become a creative partner for sports video editors — teaching effects step by step, sparking ideas, and protecting the editor's creativity.</p>
+            <div class="hero-tags">
+              <span class="tag tag-blue"><svg><use href="#i-target"/></svg> AI-assisted editing</span>
+              <span class="tag tag-coral"><svg><use href="#i-play"/></svg> Sports videography</span>
+              <span class="tag tag-violet"><svg><use href="#i-layers"/></svg> Premiere &amp; After Effects</span>
+            </div>
+          </div>
+          <div class="hero-art" aria-hidden="true">
+            <div class="art-frame">
+              <div class="art-bar"><span></span><span></span><span></span></div>
+              <div class="art-timeline">
+                <div class="art-clip a"></div><div class="art-clip b"></div><div class="art-clip c"></div><div class="art-clip d"></div>
+              </div>
+              <div class="art-cursor"></div>
+            </div>
+          </div>
+        </div>
 
-  <footer class="site-footer">
-    <p>DESN 374 &#183; Command Center &#183; built with the Interview &#8594; Brainstorm &#8594; Plan &#8594; Code &#8594; Commit workflow</p>
-  </footer>
+        <div class="stat-grid">
+          <div class="stat"><span class="stat-n">04</span><span class="stat-l">Research sources</span><span class="stat-i"><svg><use href="#i-book"/></svg></span></div>
+          <div class="stat"><span class="stat-n">04</span><span class="stat-l">Experiment tests</span><span class="stat-i"><svg><use href="#i-flask"/></svg></span></div>
+          <div class="stat"><span class="stat-n">63</span><span class="stat-l">Effects catalogued</span><span class="stat-i"><svg><use href="#i-layers"/></svg></span></div>
+          <div class="stat"><span class="stat-n">23</span><span class="stat-l">Reference captures</span><span class="stat-i"><svg><use href="#i-image"/></svg></span></div>
+        </div>
+
+        <div class="section-head">
+          <div><span class="kicker">PROJECT IDENTITY CARD</span><h2>At a glance</h2></div>
+          <span class="kicker-note">Step 02 · Command Center</span>
+        </div>
+
+        <div class="identity-grid">
+          <div class="card identity-card">
+            <div class="card-top"><span class="card-icon blue"><svg><use href="#i-spark"/></svg></span><span class="card-tag">CURIOSITY STATEMENT</span></div>
+            <p class="identity-quote">“How can AI help sports videographers make unique editing effects and transitions while making the editing process easier but keeping the creativity.”</p>
+          </div>
+          <div class="card identity-card">
+            <div class="card-top"><span class="card-icon coral"><svg><use href="#i-info"/></svg></span><span class="card-tag">SHORT SUMMARY</span></div>
+            <p class="identity-body">This platform would be used to help assist sports editors in their process of editing, by providing step-by-step help and tutorials and AI generated searches to help map out and create ideas.</p>
+          </div>
+          <div class="card identity-card">
+            <div class="card-top"><span class="card-icon violet"><svg><use href="#i-target"/></svg></span><span class="card-tag">AUDIENCE / CONTEXT</span></div>
+            <p class="identity-body">Sports videographers and editors — especially those working to a deadline who need an effect or idea quickly without losing creative control.</p>
+          </div>
+        </div>
+
+        <div class="section-head">
+          <div><span class="kicker">RESEARCH PROCESS</span><h2>Roadmap</h2></div>
+          <span class="kicker-note">Five phases of inquiry</span>
+        </div>
+        <div class="roadmap">
+          <div class="rm-step done"><span class="rm-num"><svg><use href="#i-check"/></svg></span><span class="rm-title">Territory Pitch</span><span class="rm-sub">Define territory &amp; curiosity</span></div>
+          <div class="rm-step done"><span class="rm-num"><svg><use href="#i-check"/></svg></span><span class="rm-title">Command Center</span><span class="rm-sub">Inquiry brief &amp; first tests</span></div>
+          <div class="rm-step done"><span class="rm-num"><svg><use href="#i-check"/></svg></span><span class="rm-title">Research Map</span><span class="rm-sub">Four external sources</span></div>
+          <div class="rm-step active"><span class="rm-num">04</span><span class="rm-title">Effects &amp; Evidence</span><span class="rm-sub">Vocabulary + experiments</span></div>
+          <div class="rm-step"><span class="rm-num">05</span><span class="rm-title">Publish</span><span class="rm-sub">Live GitHub Pages dashboard</span></div>
+        </div>
+
+        <div class="section-head">
+          <div><span class="kicker">QUICK NAVIGATION</span><h2>Command Center</h2></div>
+          <span class="kicker-note">Jump to any workspace</span>
+        </div>
+        <div class="command-grid">
+          <a class="cmd" href="#overview" data-section="overview"><svg><use href="#i-grid"/></svg><span>Roadmap</span></a>
+          <a class="cmd" href="#workspace" data-section="workspace"><svg><use href="#i-folder"/></svg><span>Working Files</span></a>
+          <a class="cmd" href="#log" data-section="log"><svg><use href="#i-chat"/></svg><span>Chats</span></a>
+          <a class="cmd" href="#sources" data-section="sources"><svg><use href="#i-map"/></svg><span>Info Interactions</span></a>
+          <a class="cmd" href="#prompts" data-section="prompts"><svg><use href="#i-spark"/></svg><span>AI Tools Used</span></a>
+          <a class="cmd" href="#prompts" data-section="prompts"><svg><use href="#i-code"/></svg><span>Script</span></a>
+          <a class="cmd" href="#prompts" data-section="prompts"><svg><use href="#i-terminal"/></svg><span>Prompt Log</span></a>
+        </div>
+      </section>
+
+      <!-- ===== TERRITORY PITCH ===== -->
+      <section class="view" id="territory">
+        <div class="view-head">
+          <span class="step-badge">STEP 01 · FIELD RESEARCH</span>
+          <h1>Territory Pitch</h1>
+          <p>The starting point: a territory, a tension, and the questions that will guide the inquiry.</p>
+        </div>
+
+        <div class="card accent-card">
+          <span class="kicker">TERRITORY TITLE</span>
+          <h2 class="accent-title">AI-Assisted Effects for Sports Video Editing</h2>
+          <span class="kicker" style="margin-top:18px">ONE-SENTENCE CURIOSITY STATEMENT</span>
+          <p class="accent-quote">How can AI help sports videographers make unique editing effects and transitions while making the editing process easier but keeping the creativity.</p>
+        </div>
+
+        <div class="two-col">
+          <div class="card">
+            <div class="card-top"><span class="card-icon blue"><svg><use href="#i-book"/></svg></span><span class="card-tag">SHORT PARAGRAPH</span></div>
+            <p class="body-copy">I want to see how AI can improve the process of editing sports videos and help create more unique looking content. I would want to make effects, transitions, animations, color grading/editing techniques. That could hopefully transfer over to work in Adobe Premiere and After Effects.</p>
+            <p class="body-copy">Editing videos can be so time consuming and sometimes when you get into a funk and can't figure out what you are trying to add to an edit it would be nice to be able to search to find an effect or ask it to make you one when you can't think of it. I want to see how it can be an assistant by providing ideas, tutorials and techniques that help bring creative visions to life.</p>
+          </div>
+          <div class="card pinup">
+            <div class="card-top"><span class="card-icon coral"><svg><use href="#i-chat"/></svg></span><span class="card-tag">IN CLASS PIN UP</span></div>
+            <div class="pinup-row"><span>What is your territory?</span><svg><use href="#i-arrow"/></svg></div>
+            <div class="pinup-row"><span>What are you investigating?</span><svg><use href="#i-arrow"/></svg></div>
+            <div class="pinup-row"><span>What could it become?</span><svg><use href="#i-arrow"/></svg></div>
+            <div class="pinup-row"><span>What feedback do you need?</span><svg><use href="#i-arrow"/></svg></div>
+          </div>
+        </div>
+
+        <div class="section-head"><div><span class="kicker">POSSIBLE OUTCOMES</span><h2>Three directions</h2></div><span class="kicker-note">Kept open for discussion &amp; research</span></div>
+        <div class="direction-grid">
+          <div class="direction"><span class="dir-n">01</span><span class="dir-icon"><svg><use href="#i-terminal"/></svg></span><h3>AI Editing Assistant</h3><p>Step-by-step editing effects tutorials and techniques, delivered inside the editor's workflow.</p></div>
+          <div class="direction"><span class="dir-n">02</span><span class="dir-icon"><svg><use href="#i-spark"/></svg></span><h3>AI Generated Visual Assets</h3><p>Custom overlays, textures, light leaks, and other visual elements for sports editing.</p></div>
+          <div class="direction"><span class="dir-n">03</span><span class="dir-icon"><svg><use href="#i-play"/></svg></span><h3>Video Enhancement</h3><p>Improve footage with suggestions for color grade, lighting adjustments, and motion effects.</p></div>
+        </div>
+
+        <div class="section-head"><div><span class="kicker">PEER FEEDBACK</span><h2>Questions for classmates</h2></div></div>
+        <div class="question-list">
+          <div class="question"><span class="q-n">Q1</span><p>What effects do you typically see in sports videos that look too AI generated and not really an assistance?</p></div>
+          <div class="question"><span class="q-n">Q2</span><p>Would you use an AI assistant that has step-by-step instructions for creating specific effects in more of a teaching manner?</p></div>
+          <div class="question"><span class="q-n">Q3</span><p>Do you think AI effects could improve sports videos without taking the creativity of the editor?</p></div>
+        </div>
+
+        <div class="section-head"><div><span class="kicker">AI EVIDENCE · PROMPT EXPERIMENT</span><h2>First prompt to the assistant</h2></div><button class="ghost-btn copy-btn" data-copy="prompt-script"><svg><use href="#i-copy"/></svg> Copy prompt</button></div>
+        <div class="code-card" id="prompt-script">Act as a professional sports video editor. Give me a creative After Effects technique for a college football hype video. Include unique transitions, motion graphics, visual effects, and detailed step-by-step instructions for creating the effect.</div>
+        <p class="hint"><svg><use href="#i-info"/></svg> Four screenshots from this exchange are saved in <strong>Reference Images</strong> below (captured 5 Nov 2026).</p>
+      </section>
+
+      <!-- ===== INQUIRY BRIEF ===== -->
+      <section class="view" id="inquiry">
+        <div class="view-head">
+          <span class="step-badge">STEP 02 · COMMAND CENTER</span>
+          <h1>Inquiry Brief</h1>
+          <p>Sharpening the question, naming the stakes, and defining what needs to be learned.</p>
+        </div>
+
+        <div class="card accent-card">
+          <span class="kicker">RESEARCH QUESTION</span>
+          <h2 class="accent-title">How can AI help sports editors by receiving step-by-step tutorials on how to edit certain effects in editing software?</h2>
+        </div>
+
+        <div class="two-col">
+          <div class="card">
+            <div class="card-top"><span class="card-icon coral"><svg><use href="#i-spark"/></svg></span><span class="card-tag">WHY IT MATTERS</span></div>
+            <p class="body-copy">AI can help generate things quickly which can be very resourceful when editing. It is easy to get stuck on one thing you are trying to accomplish and if you are in a time crunch sometimes you can't spend the time on things that you want to do.</p>
+            <p class="body-copy">Having AI there to tell you how to do something that you are trying to figure out can help make editing more efficient and less stressful.</p>
+          </div>
+          <div class="card">
+            <div class="card-top"><span class="card-icon blue"><svg><use href="#i-compass"/></svg></span><span class="card-tag">WHAT I NEED TO LEARN</span></div>
+            <ol class="learn-list">
+              <li>How AI can provide steps to create something and it actually be accurate</li>
+              <li>How AI can provide steps that transfer over to a certain editing software</li>
+              <li>How well the AI can understand the effects that someone is asking for and how well they can explain it</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="card outcome-card">
+          <div class="card-top"><span class="card-icon violet"><svg><use href="#i-target"/></svg></span><span class="card-tag">POSSIBLE FINAL OUTCOME</span></div>
+          <p>An AI assistance tool to give step-by-step tutorials on how to create an effect and help create ideas. Two concrete directions: <strong>step-by-step tutorials</strong> for creating an effect, and an <strong>AI generated search</strong> to help map out and create ideas.</p>
+        </div>
+
+        <div class="section-head"><div><span class="kicker">WORKSPACE SETUP</span><h2>AI tools used</h2></div></div>
+        <div class="tool-grid">
+          <div class="tool"><span class="tool-logo" style="--tc:#10a37f">✳</span><div><strong>ChatGPT</strong><span>Prompting &amp; step-by-step tutorial tests</span></div></div>
+          <div class="tool"><span class="tool-logo" style="--tc:#9999ff">Pr</span><div><strong>Adobe Premiere Pro</strong><span>Target editing software for techniques</span></div></div>
+          <div class="tool"><span class="tool-logo" style="--tc:#f9b233">Ae</span><div><strong>Adobe After Effects</strong><span>Advanced effects &amp; motion graphics</span></div></div>
+          <div class="tool"><span class="tool-logo" style="--tc:#ff6b4a">M</span><div><strong>Milanote</strong><span>Research board &amp; evidence capture</span></div></div>
+          <div class="tool"><span class="tool-logo" style="--tc:#6ee7b7">GH</span><div><strong>GitHub Pages</strong><span>Publishing this dashboard</span></div></div>
+          <div class="tool"><span class="tool-logo" style="--tc:#b58cff">op</span><div><strong>opencode</strong><span>AI coding tool that built this site</span></div></div>
+        </div>
+      </section>
+
+      <!-- ===== SOURCES & NOTES ===== -->
+      <section class="view" id="sources">
+        <div class="view-head">
+          <span class="step-badge">STEP 03 · RESEARCH MAP</span>
+          <h1>Sources &amp; Notes</h1>
+          <p>Four external sources mapped against the inquiry, with key findings captured in full.</p>
+        </div>
+
+        <div class="source-grid">
+          <article class="source">
+            <div class="source-top"><span class="source-n">01</span><span class="type-pill">Online article</span></div>
+            <h3>Bringing generative AI to video editing workflows in Adobe Premiere Pro</h3>
+            <span class="source-by">Adobe</span>
+            <p>Adobe's article explains how generative AI can improve video editing in Premiere Pro by saving time and making editing more efficient. AI tools can extend video clips, add or remove objects, and generate new footage using text prompts. Adobe also plans to integrate different AI models, giving editors more creative options without needing to switch between programs. These features are designed to automate repetitive tasks while allowing editors to focus more on creativity and storytelling. Overall, Adobe believes AI should assist video editors rather than replace them, making the editing process faster and more flexible.</p>
+            <a class="source-link" href="https://blog.adobe.com/en/publish/2024/04/15/bringing-gen-ai-to-video-editing-workflows-adobe-premiere-pro" target="_blank" rel="noopener">Open source <svg><use href="#i-external"/></svg></a>
+          </article>
+
+          <article class="source">
+            <div class="source-top"><span class="source-n">02</span><span class="type-pill">Online article</span></div>
+            <h3>Demo2Tutorial: From Human Experience to Multimodal Software Tutorials</h3>
+            <span class="source-by">Bai et al. · CVPR 2026</span>
+            <p>Explains how AI can turn screen recordings and computer interactions into easy-to-follow, step-by-step tutorials. The technology analyzes a person's actions, identifies important steps, and creates instructions using images and text to explain how to complete tasks. Researchers found that these AI-generated tutorials helped people complete tasks faster and improved the ability of AI agents to perform computer-based tasks. The study also found that the generated tutorials could be more effective than traditional human-made tutorials. Overall, the research shows how AI can make learning software easier, improve instructional content, and help people become more efficient when using digital tools.</p>
+            <a class="source-link" href="https://openaccess.thecvf.com/content/CVPR2026/html/Bai_Demo2Tutorial_From_Human_Experience_to_Multimodal_Software_Tutorials_CVPR_2026_paper.html" target="_blank" rel="noopener">Open source <svg><use href="#i-external"/></svg></a>
+          </article>
+
+          <article class="source">
+            <div class="source-top"><span class="source-n">03</span><span class="type-pill">Online article</span></div>
+            <h3>AI Video Effects for Sports Clips: Meet Rover AI Master Repaint</h3>
+            <span class="source-by">BleeqUp</span>
+            <p>Explains how BleeqUp's Rover AI Master Repaint feature uses artificial intelligence to transform ordinary sports footage into more creative and visually interesting videos. The tool allows editors to apply different visual styles and effects to selected clips, making them more engaging for social media posts and sports recaps. It works alongside AI editing tools that help capture and select important moments, giving creators more options without needing to record new footage. However, the article emphasizes that original footage should be kept for accurate sports analysis, training, and safety documentation because AI-edited footage may change the appearance of what actually happened. Overall, the article shows how AI can help sports editors create more unique and visually appealing content while saving time and expanding their creative possibilities.</p>
+            <a class="source-link" href="https://www.bleequp.com/blogs/guides-tips/rover-ai-master-repaint-sports-video" target="_blank" rel="noopener">Open source <svg><use href="#i-external"/></svg></a>
+          </article>
+
+          <article class="source">
+            <div class="source-top"><span class="source-n">04</span><span class="type-pill">Online article</span></div>
+            <h3>SportsBuddy: Designing and Evaluating an AI-Powered Sports Video Storytelling Tool Through Real-World Deployment</h3>
+            <span class="source-by">Harvard SEAS · VCG</span>
+            <p>Explains how SportsBuddy uses artificial intelligence to make sports video editing and storytelling easier for coaches, athletes, content creators, and fans. The tool combines AI player tracking, interactive features, and timeline visualizations to help users create game highlights and explain important moments without needing advanced video editing skills. Researchers found that more than 150 sports users had used SportsBuddy to create highlights, and feedback showed that it made video storytelling easier and more accessible. The study also demonstrated how the technology can improve coaching communication, game analysis, and fan engagement. Overall, the research shows how AI can simplify sports video editing while helping people better understand and communicate important moments in games.</p>
+            <a class="source-link" href="https://vcg.seas.harvard.edu/publications/20250131-sportsbuddy" target="_blank" rel="noopener">Open source <svg><use href="#i-external"/></svg></a>
+          </article>
+        </div>
+
+        <div class="section-head"><div><span class="kicker">SYNTHESIS</span><h2>Themes across the sources</h2></div></div>
+        <div class="theme-grid">
+          <div class="theme"><strong>Time efficiency</strong><p>Every source frames editing as time-consuming; AI is positioned to remove repetitive steps.</p><div class="theme-tags"><span>S1</span><span>S2</span><span>S3</span><span>S4</span></div></div>
+          <div class="theme"><strong>Assist, don't replace</strong><p>Adobe and BleeqUp both stress keeping the editor in control and preserving original footage.</p><div class="theme-tags"><span>S1</span><span>S3</span></div></div>
+          <div class="theme"><strong>Step-by-step teaching</strong><p>Demo2Tutorial shows AI-generated tutorials can outperform traditional human-made ones.</p><div class="theme-tags"><span>S2</span></div></div>
+          <div class="theme"><strong>Accessibility</strong><p>SportsBuddy proves non-experts can tell compelling stories with the right AI scaffolding.</p><div class="theme-tags"><span>S4</span></div></div>
+        </div>
+
+        <p class="hint"><svg><use href="#i-info"/></svg> A fifth journal link was collected during the search but sat slightly outside the inquiry — kept in <strong>Workspace Links</strong> as a working file.</p>
+      </section>
+
+      <!-- ===== EFFECTS LIBRARY ===== -->
+      <section class="view" id="effects">
+        <div class="view-head">
+          <span class="step-badge">EFFECTS VOCABULARY</span>
+          <h1>Effects Library</h1>
+          <p>A searchable catalogue of 63 effects — the shared vocabulary that helps the AI assistant recognise what an editor is asking for.</p>
+        </div>
+
+        <div class="note-banner"><svg><use href="#i-info"/></svg><p>Developing this list helps the AI assistant have a good variety of beginner, intermediate, and advanced techniques to teach sports editors — and embeds the keywords so it can recognise that something is an effect and what it is.</p></div>
+
+        <div class="filters">
+          <div class="search-wrap"><svg><use href="#i-search"/></svg><input type="text" id="effectSearch" placeholder="Search 63 effects…" autocomplete="off" /></div>
+          <div class="filter-group" id="difficultyFilters">
+            <button class="filter active" data-difficulty="all">All levels</button>
+            <button class="filter" data-difficulty="Easy">Easy</button>
+            <button class="filter" data-difficulty="Medium">Medium</button>
+            <button class="filter" data-difficulty="Hard">Hard</button>
+          </div>
+        </div>
+        <div class="result-line"><span id="effectCount">Showing all 63 effects</span><button class="link-btn" id="clearFilters">Clear filters</button></div>
+
+        <div id="effectGroups" class="effect-groups"></div>
+        <div id="noResults" class="empty" hidden><svg><use href="#i-search"/></svg><h3>No effects found</h3><p>Try a different search term or difficulty level.</p></div>
+      </section>
+
+      <!-- ===== EXPERIMENT LOG ===== -->
+      <section class="view" id="log">
+        <div class="view-head">
+          <span class="step-badge">NOTES / EXPERIMENT LOG</span>
+          <h1>Experiment Log</h1>
+          <p>Four structured tests with ChatGPT, each testing whether AI can teach a real Premiere Pro technique.</p>
+        </div>
+
+        <div class="log-list">
+          <article class="log-item">
+            <div class="log-head"><span class="log-n">TEST 01</span><span class="log-status ok"><svg><use href="#i-check"/></svg> Worked well</span></div>
+            <div class="log-body">
+              <div class="log-field"><span>SOURCE</span><p>ChatGPT</p></div>
+              <div class="log-field"><span>INTERACTION</span><p>“Can you teach me how to make a light leak effect for sports editing, give me a step by step tutorial on how to do it in adobe premiere”</p></div>
+              <div class="log-field findings"><span>FINDINGS</span><p>It actually worked very well — it provided two different ways to create a light leak and the directions it gave me were very simple and effective.</p></div>
+            </div>
+          </article>
+
+          <article class="log-item">
+            <div class="log-head"><span class="log-n">TEST 02</span><span class="log-status partial"><svg><use href="#i-info"/></svg> Partial result</span></div>
+            <div class="log-body">
+              <div class="log-field"><span>SOURCE</span><p>ChatGPT</p></div>
+              <div class="log-field"><span>INTERACTION</span><p>“Can you teach me how to make a masking effect for sports editing, give me a step by step tutorial on how to do it in adobe premiere”</p></div>
+              <div class="log-field findings"><span>FINDINGS</span><p>The directions it gave me for the masking worked very well, but it wanted me to add a cool text masking effect and the text instructions did not work — the directions it describes make the text disappear; it doesn't appear behind the masks like it says to.</p></div>
+            </div>
+          </article>
+
+          <article class="log-item">
+            <div class="log-head"><span class="log-n">TEST 03</span><span class="log-status partial"><svg><use href="#i-info"/></svg> Needed more input</span></div>
+            <div class="log-body">
+              <div class="log-field"><span>SOURCE</span><p>ChatGPT</p></div>
+              <div class="log-field"><span>INTERACTION</span><p>“Can you teach me how to color grade a video for sports editing that has a red football field, give me a step by step tutorial on how to do it in adobe premiere”</p></div>
+              <div class="log-field findings"><span>FINDINGS</span><p>I appreciated the directions of the color grading but the color grading itself wasn't the best. I provided a still image of the colors of the video, but I think it needed more information like if I shot in S-Log and what type of camera I shot on. The directions were explained well but some parts are not detailed enough.</p></div>
+            </div>
+          </article>
+
+          <article class="log-item">
+            <div class="log-head"><span class="log-n">TEST 03 · PT.2</span><span class="log-status follow"><svg><use href="#i-arrow"/></svg> Follow-up</span></div>
+            <div class="log-body">
+              <div class="log-field"><span>SOURCE</span><p>ChatGPT</p></div>
+              <div class="log-field"><span>INTERACTION</span><p>“My camera is Sony. My color profile is S-Log / Log. My desired look is Cinematic and dramatic. Please build my custom Premiere Pro color grading settings for my red football field footage. I shot in PP9 and I have a A7III”</p></div>
+              <div class="log-field findings"><span>FINDINGS</span><p>A follow-up to Test 03 that supplies the missing camera data (Sony A7III, S-Log, PP9) identified in the previous test. Findings were not recorded in the source notes; the resulting captures are preserved in Reference Images.</p></div>
+            </div>
+          </article>
+        </div>
+
+        <div class="section-head"><div><span class="kicker">PATTERN EMERGING</span><h2>What the tests suggest</h2></div></div>
+        <div class="insight-grid">
+          <div class="insight"><span class="insight-n">01</span><p>Simple, well-known effects are explained accurately and usefully.</p></div>
+          <div class="insight"><span class="insight-n">02</span><p>Layered effects (mask + text) fail — instructions can produce the opposite result.</p></div>
+          <div class="insight"><span class="insight-n">03</span><p>Context is everything: camera model, picture profile, and software version dramatically change output quality.</p></div>
+        </div>
+      </section>
+
+      <!-- ===== REFERENCE IMAGES ===== -->
+      <section class="view" id="images">
+        <div class="view-head">
+          <span class="step-badge">VISUAL DIRECTION</span>
+          <h1>Reference Images</h1>
+          <p>23 captures from Milanote documenting the AI exchanges, before/after comparisons, and visual references that inform the dashboard's direction.</p>
+        </div>
+        <p class="hint"><svg><use href="#i-info"/></svg> Click any image to open the lightbox. Use <kbd>←</kbd> <kbd>→</kbd> to browse and <kbd>Esc</kbd> to close.</p>
+        <div id="gallery"></div>
+      </section>
+
+      <!-- ===== PROMPTS & TOOLS ===== -->
+      <section class="view" id="prompts">
+        <div class="view-head">
+          <span class="step-badge">SCRIPT · PROMPT LOG</span>
+          <h1>Prompts &amp; Tools</h1>
+          <p>Every prompt used in the inquiry, plus the input templates designed to make AI output more reliable.</p>
+        </div>
+
+        <div class="section-head"><div><span class="kicker">SCRIPT</span><h2>Seed prompt</h2></div><button class="ghost-btn copy-btn" data-copy="seed-prompt"><svg><use href="#i-copy"/></svg> Copy</button></div>
+        <div class="code-card" id="seed-prompt">Act as a professional sports video editor. Give me a creative After Effects technique for a college football hype video. Include unique transitions, motion graphics, visual effects, and detailed step-by-step instructions for creating the effect.</div>
+
+        <div class="section-head"><div><span class="kicker">PROMPT LOG</span><h2>Experiment prompts</h2></div></div>
+        <div class="prompt-list">
+          <div class="prompt-item"><span class="prompt-n">01</span><div><span class="prompt-label">LIGHT LEAK · STEP 1</span><p id="p1">Can you teach me how to make a light leak effect for sports editing, give me a step by step tutorial on how to do it in adobe premiere</p></div><button class="icon-btn copy-btn" data-copy="p1" aria-label="Copy prompt"><svg><use href="#i-copy"/></svg></button></div>
+          <div class="prompt-item"><span class="prompt-n">02</span><div><span class="prompt-label">MASKING · STEP 2</span><p id="p2">Can you teach me how to make a masking effect for sports editing, give me a step by step tutorial on how to do it in adobe premiere</p></div><button class="icon-btn copy-btn" data-copy="p2" aria-label="Copy prompt"><svg><use href="#i-copy"/></svg></button></div>
+          <div class="prompt-item"><span class="prompt-n">03</span><div><span class="prompt-label">COLOR GRADE · STEP 3</span><p id="p3">Can you teach me how to color grade a video for sports editing that has a red football field, give me a step by step tutorial on how to do it in adobe premiere</p></div><button class="icon-btn copy-btn" data-copy="p3" aria-label="Copy prompt"><svg><use href="#i-copy"/></svg></button></div>
+          <div class="prompt-item"><span class="prompt-n">04</span><div><span class="prompt-label">COLOR GRADE · REFINED</span><p id="p4">My camera is Sony. My color profile is S-Log / Log. My desired look is Cinematic and dramatic. Please build my custom Premiere Pro color grading settings for my red football field footage. I shot in PP9 and I have a A7III</p></div><button class="icon-btn copy-btn" data-copy="p4" aria-label="Copy prompt"><svg><use href="#i-copy"/></svg></button></div>
+        </div>
+
+        <div class="section-head"><div><span class="kicker">DESIGN SPECIFICATION</span><h2>Input templates</h2></div></div>
+        <div class="two-col">
+          <div class="card template-card">
+            <div class="card-top"><span class="card-icon blue"><svg><use href="#i-folder"/></svg></span><span class="card-tag">TEMPLATE FOR PEOPLE TO FILL OUT</span></div>
+            <ol class="template-list">
+              <li>What kind of camera is being used</li>
+              <li>What were the settings of the camera when it was being used</li>
+              <li>What editing software they're using</li>
+              <li>What type of sport they filmed</li>
+              <li>What effects they want to learn or implement</li>
+              <li>If anything they want generated (insert detailed description)</li>
+            </ol>
+          </div>
+          <div class="card template-card">
+            <div class="card-top"><span class="card-icon coral"><svg><use href="#i-spark"/></svg></span><span class="card-tag">GENERATIVE TEMPLATE / SPECIFICS</span></div>
+            <ol class="template-list">
+              <li>Detailed description of idea</li>
+              <li>Provide color (if any)</li>
+              <li>Provide direction of movement (if any)</li>
+              <li>Use keywords that are similar to an effect it already knows (see Effects Library)</li>
+            </ol>
+            <p class="template-note">Then AI can create a map out of what you want and need and take you through it — kind of like a lesson plan.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== WORKSPACE LINKS ===== -->
+      <section class="view" id="workspace">
+        <div class="view-head">
+          <span class="step-badge">WORKING FILES</span>
+          <h1>Workspace Links</h1>
+          <p>Where the research actually lives — the source board, quick links, and supporting material gathered along the way.</p>
+        </div>
+
+        <div class="section-head"><div><span class="kicker">SOURCE WORKSPACE</span><h2>Primary workspace</h2></div></div>
+        <div class="workspace-grid">
+          <a class="workspace-card featured" href="https://app.milanote.com" target="_blank" rel="noopener">
+            <span class="ws-icon" style="--tc:#ff6b4a">M</span>
+            <div><span class="ws-kicker">MILANOTE</span><h3>Research board</h3><p>All five source notes and evidence captures were collected and exported from the original Milanote board.</p></div>
+            <svg class="ws-ext"><use href="#i-external"/></svg>
+          </a>
+          <a class="workspace-card" href="https://media.milanote.com/p/files/1V6cL31uKXaU4A/AoA/1.2_AI_Fluency_Summary_One-Pager.pdf" target="_blank" rel="noopener">
+            <span class="ws-icon" style="--tc:#6ee7b7">PDF</span>
+            <div><span class="ws-kicker">ATTACHMENT · 332 KB</span><h3>AI Fluency Summary One-Pager</h3><p>Supporting reading attached to the Step 1 territory pitch.</p></div>
+            <svg class="ws-ext"><use href="#i-external"/></svg>
+          </a>
+        </div>
+
+        <div class="section-head"><div><span class="kicker">QUICK LINKS</span><h2>Source notes</h2></div><span class="kicker-note">Collected during the search</span></div>
+        <p class="hint hint-block"><svg><use href="#i-info"/></svg> “I couldn't necessarily find examples of websites that do the same thing that I am wanting — most of them are just putting all the clips together and creating the whole video for you, but I found links that would help for everything individually.”</p>
+        <div class="link-list">
+          <a class="link-row" href="https://blog.adobe.com/en/publish/2024/04/15/bringing-gen-ai-to-video-editing-workflows-adobe-premiere-pro" target="_blank" rel="noopener"><span class="link-n">01</span><div><strong>Bringing gen AI to video editing workflows in Adobe Premiere Pro</strong><p>Shows the direction Adobe is taking to apply AI to its editing software and what exactly it's assisting.</p></div><svg><use href="#i-external"/></svg></a>
+          <a class="link-row" href="https://journals.sagepub.com/doi/10.3233/FAIA251467" target="_blank" rel="noopener"><span class="link-n">02</span><div><strong>SAGE Journals — AI in video workflows</strong><p>A little outside the direction of the inquiry — more about AI doing it for the editor — but interesting context that could benefit the work later.</p></div><svg><use href="#i-external"/></svg></a>
+          <a class="link-row" href="https://vcg.seas.harvard.edu/publications/20250131-sportsbuddy" target="_blank" rel="noopener"><span class="link-n">03</span><div><strong>SportsBuddy · Harvard SEAS</strong><p>States the same concern about how time-consuming editing is, and shows how SportsBuddy has helped that process.</p></div><svg><use href="#i-external"/></svg></a>
+          <a class="link-row" href="https://openaccess.thecvf.com/content/CVPR2026/html/Bai_Demo2Tutorial_From_Human_Experience_to_Multimodal_Software_Tutorials_CVPR_2026_paper.html" target="_blank" rel="noopener"><span class="link-n">04</span><div><strong>Demo2Tutorial · CVPR 2026</strong><p>Searched for AI tutorials that teach effects — couldn't find much, so this paper on AI-generated tutorials became useful for the teaching process.</p></div><svg><use href="#i-external"/></svg></a>
+          <a class="link-row" href="https://www.bleequp.com/blogs/guides-tips/rover-ai-master-repaint-sports-video" target="_blank" rel="noopener"><span class="link-n">05</span><div><strong>Rover AI Master Repaint · BleeqUp</strong><p>Talks about when to use AI for sports editing and which clips to technically use it for.</p></div><svg><use href="#i-external"/></svg></a>
+        </div>
+
+        <div class="section-head"><div><span class="kicker">COURSE RESOURCES</span><h2>Publishing</h2></div></div>
+        <div class="link-list">
+          <a class="link-row" href="https://github.com/sicxz/github-starter-tutorial" target="_blank" rel="noopener"><span class="link-n">GH</span><div><strong>GitHub Starter Tutorial + Command Center Dashboard</strong><p>The repo README that walks through cloning, building, and publishing the dashboard to GitHub Pages.</p></div><svg><use href="#i-external"/></svg></a>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="page-foot">
+      <span>With The Assist · Personal Research Dashboard</span>
+      <span>Cassidy Breshears · DESN 368 · Fall 2026</span>
+    </footer>
+  </div>
+
+  <!-- ============ LIGHTBOX ============ -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer" hidden>
+    <button class="lb-close" id="lbClose" aria-label="Close"><svg><use href="#i-x"/></svg></button>
+    <button class="lb-nav lb-prev" id="lbPrev" aria-label="Previous"><svg><use href="#i-left"/></svg></button>
+    <figure><img id="lbImg" src="" alt="" /><figcaption><span id="lbCap"></span><span class="lb-count" id="lbCount"></span></figcaption></figure>
+    <button class="lb-nav lb-next" id="lbNext" aria-label="Next"><svg><use href="#i-right"/></svg></button>
+  </div>
+
+  <div class="toast" id="toast"><svg><use href="#i-check"/></svg><span>Copied to clipboard</span></div>
+
+  <script src="app.js"></script>
 </body>
 </html>
